@@ -146,6 +146,7 @@ Summary:
 <br>
 
 ## Research Question 1
+-Distribution of crime
  
 ```{r}
 crime<-read.csv("crime.csv",header = TRUE);data
@@ -158,12 +159,19 @@ BurgRate=data$BurgRate
 LarcTheftRate=data$LarcTheftRate
 VehicleTheftRate=data$VehicleTheftRate
 boxplot(VCRate,horizontal = T)
+#violent crime
 boxplot(MMSRate,horizontal = T)
+#MMS
 boxplot(RapeRate,horizontal = T)
+#Rape
 boxplot(RobberyRate,horizontal = T)
+#robbery
 boxplot(AggAssaultRate,horizontal = T)
+#agg assault
 boxplot(BurgRate,horizontal = T)
+#burg
 boxplot(VehicleTheftRate,horizontal = T)
+#vehicle thef
 ```
 
 Summary: 
