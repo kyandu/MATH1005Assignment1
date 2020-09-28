@@ -1,6 +1,6 @@
 ---
 title: "MATH1005 Project 1 - Group 55"
-author: "500557358; 500480757 "
+author: "500557358; 500480757;500179286"
 subtitle: "Project X"
 date: "University of Sydney | Math1005 | 2020"
 output:
@@ -146,8 +146,25 @@ Summary:
 <br>
 
 ## Research Question 1
-
-Insert text and analysis. 
+ 
+```{r}
+crime<-read.csv("crime.csv",header = TRUE);data
+VCRate=data$VCRate
+MMSRate=data$MMSRate
+RapeRate=data$RapeRate
+RobberyRate=data$RobberyRate
+AggAssaultRate=data$AggAssault.1
+BurgRate=data$BurgRate
+LarcTheftRate=data$LarcTheftRate
+VehicleTheftRate=data$VehicleTheftRate
+boxplot(VCRate,horizontal = T)
+boxplot(MMSRate,horizontal = T)
+boxplot(RapeRate,horizontal = T)
+boxplot(RobberyRate,horizontal = T)
+boxplot(AggAssaultRate,horizontal = T)
+boxplot(BurgRate,horizontal = T)
+boxplot(VehicleTheftRate,horizontal = T)
+```
 
 Summary: 
 
